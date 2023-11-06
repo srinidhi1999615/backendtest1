@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="/css/header.css">
+<header id="sticky-header">
+    <div class="header-content">
+        <div class="header-center"><b>Welcome to CodeHub</b></div>
+        <div class="header-buttons">
+            <ul>
+                <% if (locals.user) { %>
+                    <li>
+                        <a href="/users/profile">
+                            <%= user.name %>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/users/signout">Sign Out</a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                <% } else { %>
+                    <li>
+                        <a href="/users/signin">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="/users/signup">Sign Up</a>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</header>

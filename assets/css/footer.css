@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #33333300;
+}
+
+.container {
+    flex: 1;
+    /* Your content styling here */
+}
+
+.footerContainer {
+    background-color: #ffb833;;
+    color: #333;
+    padding: 10px;
+}

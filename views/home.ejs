@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <style>
+        .custom-card {
+            width: 300px; /* Set your desired card width */
+            height: 400px; /* Set your desired card height */
+        }
+
+        .custom-card .card-img-top {
+            width: 100%; /* Set the image width to 100% of the card */
+            height: 70%; /* Set the image height to your desired value */
+            object-fit: cover;
+        }
+        .custom-container {
+            margin-top: 30px; /* Adjust the margin-top as needed */
+        }
+        .moving-message-container {
+            overflow: hidden;
+            position: relative;
+            background-color: transparent; /* Background color of the message container */
+            color: #1e1c1c;; /* Text color */
+            margin-top: 100px;
+        }
+
+        .moving-message {
+            white-space: nowrap;
+            animation: moveLeft 20s linear infinite; /* Adjust the duration and animation speed as needed */
+            padding: 5px;
+        }
+
+        @keyframes moveLeft {
+            0% {
+                transform: translateX(100%); /* Start from the right edge */
+            }
+            100% {
+                transform: translateX(-100%); /* End at the left edge */
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="moving-message-container">
+        <div class="moving-message">
+            <p><b>Enroll now and get 15% off on any of the courses. Hurry up! Offer valid till 48hrs only.</b></p>
+        </div>
+    </div>
+
+
+    <div class="container mt-5 custom-container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                    <img src="https://th.bing.com/th?id=OIP.UgxaRVX46n0ijH0zB1yBUAHaF7&w=279&h=223&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Java</h5>
+                        <p class="card-text">Java is a high-level, class-based, object-oriented programming language.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                    <img src="https://th.bing.com/th?id=OIP.hicFMnjJf8GyP0sleHrTbAHaE-&w=305&h=204&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">Python is a high-level, general-purpose programming language.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Card 3 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://th.bing.com/th/id/OIP.9GQvNibgFNl5tl7peuHstAHaEK?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">JavaScript</h5>
+                      <p class="card-text">JavaScript programming is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+                  </div>
+              </div>
+          </div>
+
+             <!-- Card 4 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://p7.hiclipart.com/preview/605/134/542/eclipse-c-integrated-development-environment-arduino-linux-c-png-transparent-images.jpg" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">C++</h5>
+                      <p class="card-text">C++ is a cross-platform language that can be used to create high-performance applications.</p>
+                  </div>
+              </div>
+          </div>
+
+             <!-- Card 5 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://th.bing.com/th/id/OIP.5gf2JQQmWla-GU-WXTrGcgHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Nodejs</h5>
+                      <p class="card-text">Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. </p>
+                  </div>
+              </div>
+          </div>
+
+             <!-- Card 6 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://th.bing.com/th/id/OIP.dJTqBQy3mMnMdI8klN_kHAHaGT?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">React</h5>
+                      <p class="card-text">React is a free and open-source front-end JavaScript library for building user interfaces based on components.</p>
+                  </div>
+              </div>
+          </div>
+
+             <!-- Card 7 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://th.bing.com/th/id/OIP.4dQkxLm-cAndV-9OfVjjQwHaE8?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">html</h5>
+                      <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                  </div>
+              </div>
+          </div>
+
+             <!-- Card 8 -->
+             <div class="col-md-4 mb-4">
+              <div class="card custom-card">
+                  <img src="https://th.bing.com/th/id/OIP.kZ3hspUyWId6_1JbOOXwrAAAAA?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                  <div class="card-body">
+                      <h5 class="card-title">Css</h5>
+                      <p class="card-text">Css is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. </p>
+                  </div>
+              </div>
+          </div>
+
+           <!-- Card 9 -->
+           <div class="col-md-4 mb-4">
+            <div class="card custom-card">
+                <img src="https://th.bing.com/th/id/OIP.FZGVRUnLT0WHCUnE3lPNrwHaF7?pid=ImgDet&rs=1" class="card-img-top" alt="Course 2">
+                <div class="card-body">
+                    <h5 class="card-title">Github</h5>
+                    <p class="card-text">GitHub, Inc. is a platform and cloud-based service for software development and version control using Git to store code.</p>
+                </div>
+            </div>
+        </div>
+            <!-- Repeat similar card structures for the remaining courses -->
+        </div>
+    </div>
+
+   
+</body>
+</html>

@@ -1,0 +1,39 @@
+#sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffb833; /* Dark orange background color */
+    color: #333;  /* White text color for good contrast */
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header-center {
+    text-align: center;
+    flex: 1;
+    margin-left: 100px; /* Adjust the margin-right as needed to move the heading to the right */
+}
+
+.header-buttons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-buttons ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    color: #333; /* White text color for good contrast */
+}
