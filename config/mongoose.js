@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://localhost/srinidhibackendtest1dev');
+mongoose.connect('mongodb://0.0.0.0/srinidhibackendtest1dev');
 const db=mongoose.connection;
 db.on('error',console.error.bind(console,"Error Connecting to the database"));
 db.once('open',function(){
