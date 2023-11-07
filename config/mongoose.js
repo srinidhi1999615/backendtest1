@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb://0.0.0.0/srinidhibackendtest1dev');
+mongoose.connect('mongodb+srv://Srinidhi:joshi123@cluster0.wrfovib.mongodb.net/?retryWrites=true&w=majority');
 const db=mongoose.connection;
 db.on('error',console.error.bind(console,"Error Connecting to the database"));
 db.once('open',function(){
