@@ -55,7 +55,7 @@ app.use('/', require('./routes'));
 // route for exporting student data
 app.get('/export-students', async (req, res) => {
     try {
-      const client = new MongoClient('mongodb://0.0.0.0:27017/srinidhibackendtest1dev', { useUnifiedTopology: true });
+      const client = new MongoClient('mongodb+srv://Srinidhi:joshi123@cluster0.wrfovib.mongodb.net/srinidhibackendtest1dev?retryWrites=true&w=majority', { useUnifiedTopology: true });
       await client.connect();
   
       const db = client.db('srinidhibackendtest1dev'); // Replace with your database name
